@@ -1,11 +1,138 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
 
+:root {
+    --blue: #01ACFD;
+    --orange: #FEA301;
+    --balck: #111111;
+    --white: #F7F7F7;
+}
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: "Quicksand", serif;
     font-optical-sizing: auto;
-    font-weight:regular;
+    font-weight:400;
     font-style: normal;
+}
+
+/*share styles*/
+
+.container {
+    max-width:1160px;
+    margin: auto;
+}
+
+
+
+/*navbar style*/
+
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 102px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+}
+.logo img {
+    width:62px;
+    height:62px;
+}
+.logo h1 {
+    font-size: 2rem;
+    font-weight:bold;
+    line-height: 2rem;
+    color: rgba(17, 17, 17, 1);
+}
+
+.nav-container ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+.nav-container ul li {
+    list-style: none;
+}
+.nav-container ul li a {
+    text-decoration: none;
+}
+.home {
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+    font-weight: bold;
+    color:rgba(254, 163, 1, 1);
+}
+.about {
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+    font-weight: bold;
+    color:rgba(1, 172, 253, 1);
+}
+.facilities {
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+    font-weight: bold;
+    color:#05D4DF;
+}
+.admission {
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+    font-weight: bold;
+    color: #5D58EF;
+}
+
+.nav-button {
+    background-color: rgba(254, 163, 1, 1);
+    padding: 10px 30px;
+    border-radius: 12px;
+    font-weight: 600;
+}
+.nav-button a  {
+    text-decoration: none;
+    color: white;
+}
+
+
+/*hero section style*/
+.hero-flex-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+.hero-text {
+    flex: 0 0 640px;
+}
+.hero-text-title {
+    font-size: 3.5rem;
+    font-weight: bold;
+    line-height: 3.8rem;
+    color: var(--balck);
+    padding-right: 65px;
+}
+.empower {
+    color: var(--orange);
+}
+.toward{
+    color: rgba(1, 172, 253, 1);
+}
+.hero-text-des {
+    font-size: 1.25rem;
+    color:var(--balck);
+    margin:24px auto;
+}
+.hero-text-btn {
+    background-color: var(--balck);
+    padding: 10px 30px;
+    border-radius: 12px;
+    font-weight: 600;
+    text-decoration: none;
+    color: var(--white);
+}
+.hero-img {
+    flex: 0 0 468px;
 }
