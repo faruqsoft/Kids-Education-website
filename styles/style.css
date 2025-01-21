@@ -136,3 +136,131 @@
 .hero-img {
     flex: 0 0 468px;
 }
+
+
+
+/*Curriculum section style*/
+.container-heading {
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 3.5rem;
+    color: var(--balck);
+    text-align: center;
+}
+.curriculum-cards {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.curriculum-card-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color:#202020;
+}
+.curriculum-card-des {
+    font-size: 1rem;
+    font-weight: 500;
+    color:#808080;
+    line-height: 1.8rem;
+}
+
+.read-more-kinder {
+    font-size: 1rem;
+    font-weight: bold;
+    color:#64C8FF;
+    text-decoration: none;
+
+}
+.read-more-elementary {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #F0AA00;
+    text-decoration: none;
+}
+.read-more-middle {
+    font-size: 1rem;
+    font-weight: bold;
+    color:#8700FF;
+    text-decoration: none;
+
+}
+
+/*icon style*/
+.icon-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.icon-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 60px;
+    height: 60px;
+    background-color: var(--orange);
+    border-radius: 50%;
+    color:var(--white);
+}
+
+
+/*stories section styles*/
+.stories-grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+
+.story-section  {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+
+
+
+
+/*button section style*/
+
+.central-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+/*footer section style*/
+
+.footer-container {
+    max-width: 1440px;
+    height:519px ;
+    margin: auto;
+    background-color: #01ACFD;
+}
+.footer-flex-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.logo-education-flex {
+    display: flex;
+}
+
+
+
+
+.footer-about {
+    display: flex;
+    flex-direction: column;
+}
+@media screen and (max-width: 576px) {
+
+}
