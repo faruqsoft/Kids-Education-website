@@ -447,8 +447,6 @@ input#check {
     }
 }
 
-
-
 /* Curriculum Section End */
 
 
@@ -542,13 +540,48 @@ h3.story-title {
     position: absolute;
     top: -70px;
 }
-
+.single-img-wrap img{
+    border-radius: 16px 16px 0 0 ;
+}
 
 .view-all-story {
     text-align: center;
     margin-top: 80px;
 }
 
+
+@media (max-width: 1024px){
+    .stories-grid-container {
+        grid-template-columns: repeat(1, 1fr);
+
+    }
+    .story-section{
+        gap: 11px;
+    }
+    .fun-section {
+        display: none;
+    }
+    .single-img-wrap img {
+       width:100%;
+    }
+    .h3.story-title{
+        font-size: 9px;
+        line-height: 17px;
+        margin-top: 14px;
+    }
+    .story-btn {
+        padding: 6px 11px;
+        border-radius: 28px;
+        font-size: 9px;
+        position: absolute;
+        top: -60px;
+    }
+    .story-content {
+        padding: 0 22px 17px;
+    }
+
+
+}
 
 /* Footer Section Start  */
 
