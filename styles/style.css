@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 :root{
     --orange: #FEA301;
     --blue: #01ACFD;
@@ -39,15 +38,12 @@ a{
     margin: auto;
 }
 
-
-
 /* Header CSS Start  */
 
 .header-wrapper {
     padding: 20px 0;
     position: relative;
 }
-
 
 .flex-container {
     display: flex;
@@ -198,7 +194,6 @@ input#check {
     }
 
 
-
     .nav-menu li:nth-child(n+1) {
         border-bottom: 1px solid #11111126;
     }
@@ -225,7 +220,6 @@ input#check {
         height: 100vh;
         top: 101%;
     }
-
 
 }
 
@@ -357,7 +351,6 @@ input#check {
     box-shadow: 0px 0px 28.3px 0.5px rgba(0,0,0, 10%);
 }
 
-
 .curriculum-card .curriculum-card-title {
     font-size: 1.5rem;
     font-weight: bold;
@@ -451,7 +444,6 @@ input#check {
 
 
 /* Story Section Start  */
-
 .stories-wrap {
     padding: 60px 0;
     background-image: url("../assets/bg.png");
@@ -491,6 +483,13 @@ input#check {
     border-radius: 16px;
 }
 
+.single-img-wrap img {
+    width: 100%;
+    border-top-right-radius: 16px;
+    border-top-left-radius: 16px;
+}
+
+
 
 .story-content {
     padding: 0 38px 38px 38px;
@@ -521,7 +520,6 @@ input#check {
     line-height: 28px;
     font-weight: 500;
     color: #666666;
-    line-height: 1.8rem;
     font-family: "Raleway", serif;
 }
 
@@ -532,7 +530,6 @@ h3.story-title {
 }
 
 .story-btn {
-    text-decoration: none;
     background-color: #95B226;
     color: var(--white);
     padding: 14px 20px;
@@ -540,17 +537,26 @@ h3.story-title {
     position: absolute;
     top: -70px;
 }
-.single-img-wrap img{
-    border-radius: 16px 16px 0 0 ;
-}
 
 .view-all-story {
     text-align: center;
     margin-top: 80px;
 }
 
+.view-all-story-btn {
+    padding: 10px 61px;
+}
+
 
 @media (max-width: 1024px){
+    .stories-wrap {
+        padding: 40px 0;
+    }
+    .container-heading {
+        font-size: 26px;
+        margin-bottom: 20px;
+    }
+
     .stories-grid-container {
         grid-template-columns: repeat(1, 1fr);
 
@@ -561,27 +567,38 @@ h3.story-title {
     .fun-section {
         display: none;
     }
-    .single-img-wrap img {
-       width:100%;
+
+    .story-content {
+        padding: 0 22px 20px;
     }
-    .h3.story-title{
-        font-size: 9px;
-        line-height: 17px;
-        margin-top: 14px;
+
+    h3.story-title {
+        font-size: 14px;
+        margin-top: 22px;
+        line-height: 22px;
     }
+
     .story-btn {
         padding: 6px 11px;
         border-radius: 28px;
         font-size: 9px;
-        position: absolute;
-        top: -60px;
+        top: -36px;
     }
-    .story-content {
-        padding: 0 22px 17px;
+    .perple-bg{
+        background-color: #5D58F0;
     }
 
+    .view-all-story {
+        margin-top: 20px;
+    }
+
+    .view-all-story-btn {
+        padding: 0px 37px;
+        font-size: 16px;
+    }
 
 }
+
 
 /* Footer Section Start  */
 
@@ -592,7 +609,6 @@ h3.story-title {
 
 .footer-container {
     max-width: 1070px;
-    height: 222px;
     margin: auto;
 }
 
@@ -602,4 +618,77 @@ h3.story-title {
     color: var(--white);
 }
 
+.logo-education {
+    flex: 0 0 400px;
+}
 
+.logo-education-flex {
+    margin-bottom: 35px;
+}
+
+.logo-education p {
+    color: var(--whiteBg);
+    font-size: 20px;
+}
+.footer-about {
+    flex: 0 0 auto;
+}
+
+.footer-about h2 {
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+
+.footer-menu {
+    list-style: none;
+}
+
+.footer-menu li {
+    margin-bottom: 20px;
+}
+
+.footer-menu li a {
+    color: var(--whiteBg);
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.touch{
+    flex: 0 0 auto;
+}
+
+.touch h2 {
+    font-size: 24px;
+    margin-bottom: 32px;
+}
+
+
+@media (max-width: 1024px){
+    .footer-wrap {
+        padding: 65px 0 60px;
+    }
+
+    .footer-container{
+        padding: 0 20px;
+    }
+    .footer-flex-container {
+        flex-direction: column;
+    }
+
+    .logo-education {
+        flex: 0 0 auto;
+        margin-bottom: 32px;
+    }
+
+    .footer-about {
+        margin-bottom: 32px;
+    }
+
+    .footer-about h2 {
+        margin-bottom: 28px;
+    }
+
+    .touch h2 {
+        margin-bottom: 36px;
+    }
+}
